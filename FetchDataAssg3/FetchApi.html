@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Call Api data</title>
+        <script>
+          async function callApi(){
+            let result = await fetch('https://run.mocky.io/v3/9b184f9d-bf48-4467-9d8f-137ea0eba817');
+    
+           let employeesData = await result.json()
+               var resultData = employeesData.data
+            
+
+            document.getElementById('employeeData').innerHTML = resultData.map((employee) =>
+                `<tr>
+                <td>${employee.name}</td> 
+                <td>${employee.office}</td> 
+                <td>${employee.position}</td> 
+                <td>${employee.salary}</td> 
+                 </tr>`
+            ).join("");
+          }
+
+          callApi();
+
+        </script>
+    </head>
+    <body>
+        <h1>Sankey Solution Employess Data </h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Office</th>
+                    <th>Position</th>
+                    <th>Salery</th>
+                </tr>
+            </thead>
+            <tbody id="employeeData"></tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+        <div class="main-box">
+            <div class="left-box">
+                <img src="imges/ImgBox.jpg" alt="">
+            </div>
+
+            <div class="right-box">
+                <form class="conentBx" name="myform" onsubmit=" return validForm()"  >
+                  <span>Welcome back</span>
+                  <h1>Login to your account</h1>
+                    <div class="inputBx">
+                        <label>Email</label>
+                        <input type="email" name="femail" placeholder="tanu@gmail.com">
+                    </div>
+                    <div class="inputBx">
+                        <label>Password</label>
+                        <input type="password" name="fpassword" placeholder="******">
+                    </div>
+
+                    <div class="inputCheck">
+                        <label><input type="checkbox" class="checkBox-round" >Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <div class="inputBx">
+                        <input class="botton" type="submit" value="Login now" >
+                        <p  id="errEmail" >Invalid email</p>
+                        <p id="errPswd" >Invalid password</p>
+                        <a href="#" class="google-sign"><img src="imges/googlePng.png" alt="google icon">Or sign-in with google</a>
+                    </div>
+                    <div class="bottomBx">
+                        Don't have an account? <a href="#">join free today</a>
+                     </div>
+                    
+                </form> 
+
+            </div>
+        </div>
+</body>
+</html>

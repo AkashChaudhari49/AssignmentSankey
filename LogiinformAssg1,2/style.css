@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-box{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+
+
+}
+
+.left-box{
+    width: 50%;
+    height: 100%;
+    display: block;
+    
+}
+.left-box img{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.right-box{
+    width: 50%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: system-ui;
+
+    
+}
+.right-box .conentBx{
+    width: 50%;
+    margin-top: 20%;
+}
+.right-box h1{
+    margin-bottom: 10px;
+    font-family: system-ui;
+    font-size: 18px;
+    
+}
+.right-box .inputBx{
+    display: block;
+}
+.right-box .inputBx input{
+    width: 100%;
+    padding: 10px 0px 10px 1px;
+    margin: 8px 0px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    
+    
+}
+.right-box .inputCheck{
+    margin-top: 9px;
+    align-items: center;
+    
+}
+.right-box .inputCheck .checkBox-round {
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    border: 1px solid rgb(30, 28, 28);
+    appearance: none;
+    outline: none;
+}
+
+
+.right-box .inputCheck a {
+    float: right;
+    margin-right: 5px;
+    text-decoration: none;
+    color: rgb(6, 38, 141);
+}
+
+.right-box .inputBx .botton{
+    
+    width: 100%;
+    padding: 11px 0px;
+    margin-top: 12px;
+    align-items: center;
+    color:#fff;
+    border-radius: 4px;
+    background: #14ae5c;
+    border-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+
+}  
+
+.right-box #errEmail{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    display:none;
+}
+
+.right-box #errPswd{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    display:none;
+}
+
+.inputBx .google-sign{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(50, 59, 69);
+    padding: 11px 0;
+    margin-top: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+.inputBx .google-sign img{
+    position: relative;
+    width: 17px;
+    margin-right: 5px;
+
+}
+
+
+.right-box .inputBx2{
+    display: flex;
+}
+.right-box .inputBx label{
+    
+    width: 100%;
+    padding: 11px 2px;
+}
+
+
+.right-box .bottomBx{
+    margin-top:3rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.right-box .bottomBx a{
+    text-decoration: none;
+    color: rgb(6, 38, 141);
+}
+
+
+
+/* media query css for responsive */
+
+@media (max-width: 768px)
+{
+    .main-box .left-box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .main-box .right-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        
+    }
+    .main-box .right-box .conentBx{
+        background: rgb(255, 255, 255);
+        padding:15px 22px;
+        width: 55%;
+        border-radius: 10px;
+        margin: 10px 0 10px;
+        
+    }
+
+    .right-box h1{
+    font-size: 15px;
+    }
+
+    .right-box .inputCheck .checkBox-round{
+        width: 10px;
+        height: 10px;
+    }
+    .right-box .inputBx button{
+        margin-top: 8px;
+        padding: 8px 0px;
+    }
+    .right-box .errorPara{
+        font-size: 10px;
+    }
+    .inputBx .google-sign{
+        margin-top: 8px;
+        padding: 8px 0px;
+    }
+
+    .right-box .bottomBx{
+        margin-top:2rem;
+    }
+
+}
